@@ -1,3 +1,58 @@
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-Gilroy Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-Gilroy Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-Gilroy Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-Gilroy Bold Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-Gilroy Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-Gilroy Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-Gilroy XBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
 :root {
     --color-off-black: #222;
     --color-medium-grey: #282828;
@@ -22,8 +77,8 @@
     --border-radius: 6px;
     --a11y-outline: dashed 1px var(--color-white);
     --a11y-outline-light: dashed 1px var(--color-slate);
-    --typeface-heading: "League Spartan", sans-serif;
-    --typeface-body: "Roboto", serif;
+    --typeface-heading: 'SVN-Gilroy', 'Inter', Arial, sans-serif;
+    --typeface-body: 'SVN-Gilroy', 'Inter', Arial, sans-serif;
     --typeface-quote: "Young Serif", serif;
     --font-size--base: 1rem;
     --line-height--body: 1.5rem;
@@ -482,8 +537,32 @@ h4 {
 .stagger-title {
     margin-bottom: -1rem;
     margin-left: -1rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    line-height: 6rem;
+    overflow: hidden;
+    perspective: 170px;
+    transform: translateZ(0);
+    transform-style: preserve-3d
+}
+
+.stagger-title-footer {
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    line-height: 4.5rem;
+    font-size: 3rem;
+    overflow: hidden;
+    perspective: 170px;
+    transform: translateZ(0);
+    transform-style: preserve-3d
+}
+.send-message {
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    text-decoration: none;
 }
 
 body {
@@ -1200,7 +1279,7 @@ body.menu-open .main-nav {
 .primary-nav li {
     opacity: 0;
     transform: translateY(10px);
-    transition: opacity .3s ease, transform .3s ease
+    transition: opacity .3s ease, transform .3s ease;
 }
 
 .primary-nav .current-menu-item a:after,
@@ -1216,7 +1295,7 @@ body.menu-open .main-nav {
     font-family: League Spartan, sans-serif;
     font-family: var(--typeface-heading);
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: .05em;
     letter-spacing: .1rem;
     line-height: 1;
@@ -2006,13 +2085,6 @@ body.menu-open .main-nav {
     }
 }
 
-.stagger-title {
-    overflow: hidden;
-    perspective: 170px;
-    transform: translateZ(0);
-    transform-style: preserve-3d
-}
-
 .vortex {
     filter: url(styles.css);
     height: 100%;
@@ -2038,6 +2110,11 @@ body.menu-open .main-nav {
     margin: -8rem auto 0rem;
     position: relative;
     width: 16rem
+}
+
+del {
+    --webkit-text-decoration: line-through !important;
+    text-decoration: line-through !important;
 }
 
 @media screen and (min-width:768px) {
@@ -2756,7 +2833,7 @@ input:checked+.switch__wrapper .switch__toggle {
 
 .page-content h1 {
     font-size: 2.2rem;
-    line-height: 2.5rem;
+    line-height: 4rem;
     margin-bottom: 0
 }
 
@@ -2769,7 +2846,8 @@ input:checked+.switch__wrapper .switch__toggle {
 .page-content h3 {
     font-size: 1.5rem;
     line-height: 2rem;
-    margin-bottom: 0
+    margin-bottom: 1rem;
+    text-transform: none;
 }
 
 .page-content blockquote {
@@ -2844,7 +2922,7 @@ input:checked+.switch__wrapper .switch__toggle {
 
     .page-content h1 {
         font-size: 2.8rem;
-        line-height: 3.4rem
+        line-height: 4.3rem
     }
 
     .page-content h2 {
