@@ -77,9 +77,9 @@
     --border-radius: 6px;
     --a11y-outline: dashed 1px var(--color-white);
     --a11y-outline-light: dashed 1px var(--color-slate);
-    --typeface-heading: 'SVN-Gilroy', 'Inter', Arial, sans-serif;
-    --typeface-body: 'SVN-Gilroy', 'Inter', Arial, sans-serif;
-    --typeface-quote: "Young Serif", serif;
+    --typeface-heading: 'SVN-Gilroy', 'Inter', sans-serif;
+    --typeface-body: 'SVN-Gilroy', 'Inter', sans-serif;
+    --typeface-quote: 'SVN-Gilroy', serif;
     --font-size--base: 1rem;
     --line-height--body: 1.5rem;
     --font-size--h1: 2.3125rem;
@@ -465,7 +465,6 @@ ol,
 p,
 small,
 ul {
-    font-family: Roboto, serif;
     font-family: var(--typeface-body);
     font-size: 1rem;
     font-size: var(--font-size--base);
@@ -598,7 +597,6 @@ h2:hover span:after {
 }
 
 blockquote h3 {
-    font-family: "Young Serif", serif;
     font-family: var(--typeface-quote);
     font-weight: 700;
     margin-bottom: .5rem;
@@ -620,7 +618,6 @@ html {
 body {
     -moz-osx-font-smoothing: grayscale;
     color: var(--color-slate);
-    font-family: Roboto, serif;
     font-family: var(--typeface-body);
     font-weight: 400;
     position: relative
@@ -2855,14 +2852,12 @@ input:checked+.switch__wrapper .switch__toggle {
 }
 
 .page-content blockquote p {
-    font-family: "Young Serif", serif;
     font-family: var(--typeface-quote);
     font-size: 1.5rem;
     line-height: 2rem
 }
 
 .page-content blockquote cite {
-    font-family: Roboto, serif;
     font-family: var(--typeface-body);
     font-size: 1.25rem;
     line-height: 2rem
