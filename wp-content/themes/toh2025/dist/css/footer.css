@@ -1,0 +1,55 @@
+/* Footer 3-column layout styles */
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.footer-col {
+  flex: 1;
+}
+.footer-col--center {
+  text-align: center;
+}
+.footer-col--right {
+  text-align: right;
+}
+.footer-col--left address,
+.footer-col--left a {
+  display: block;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+}
+.site-footer {
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+.site-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+.site-footer h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.site-footer blockquote {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.site-footer cite {
+  display: block;
+  margin-top: 0.5em;
+  font-style: italic;
+  font-weight: normal;
+}
+.site-footer .copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9em;
+  color: #aaa;
+}
