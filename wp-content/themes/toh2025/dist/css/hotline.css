@@ -1,0 +1,50 @@
+.hotline-float {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #e6001a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.hotline-float:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.hotline-icon {
+    display: inline-block;
+    animation: vibrate 1s ease-in-out infinite;
+}
+
+.hotline-text {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+@keyframes vibrate {
+    0%, 100% { transform: rotate(0deg); }
+    10%, 30%, 50%, 70%, 90% { transform: rotate(-5deg); }
+    20%, 40%, 60%, 80% { transform: rotate(5deg); }
+}
+
+@media (max-width: 768px) {
+    .hotline-float {
+        bottom: 20px;
+        left: 20px;
+        padding: 8px 15px;
+    }
+    .hotline-text {
+        display: none;
+    }
+    .hotline-icon {
+        margin: 0;
+    }
+}
