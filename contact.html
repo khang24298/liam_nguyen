@@ -185,10 +185,11 @@ document.addEventListener('DOMContentLoaded', function () {
         formStatus.textContent = 'Sending...';
 
         try {
-            const response = await fetch('https://send-email.khangnguyen24298.workers.dev', {
+            const response = await fetch('https://send-email.khangnguyen24298.workers.dev/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin':'https://localhost:8000'
                 },
                 body: JSON.stringify(data),
             });
