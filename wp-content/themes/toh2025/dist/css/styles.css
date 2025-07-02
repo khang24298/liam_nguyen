@@ -1101,16 +1101,36 @@ body {
 }
 
 .logo {
-    background: url(../images/t-logo.png) no-repeat 50%;
-    background-size: contain;
     display: block;
-    height: 3rem;
+    height: 4rem;
     left: 1rem;
     position: absolute;
     top: .5rem;
-    width: 3rem;
+    width: 4rem;
     z-index: 1000;
     pointer-events: auto
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo .logo-dark {
+    display: none;
+}
+
+.logo .logo-light {
+    display: block;
+}
+
+html.dark .logo .logo-dark {
+    display: block;
+}
+
+html.dark .logo .logo-light {
+    display: none;
 }
 
 @media screen and (min-width:1020px) {
