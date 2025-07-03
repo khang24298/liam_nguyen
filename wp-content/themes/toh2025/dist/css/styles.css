@@ -3058,7 +3058,7 @@ input:checked+.switch__wrapper .switch__toggle {
 }
 
 .toh-block {
-    padding: 5rem 0;
+    padding: 3rem 0;
     position: relative
 }
 
@@ -3074,9 +3074,6 @@ input:checked+.switch__wrapper .switch__toggle {
 }
 
 @media screen and (min-width:768px) {
-    .toh-block {
-        padding: 10rem 0
-    }
 
     .toh-block.toh-block--stand-alone {
         padding: 4rem 0
