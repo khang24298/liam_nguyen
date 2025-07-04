@@ -12,19 +12,6 @@ Promise.all([
           if (footer) footer.innerHTML = data;
         });
 
-      fetch('/layouts/hotline.html')
-        .then(response => response.text())
-        .then(data => {
-          const hotLine = document.getElementById('hot-line');
-          if (hotLine) hotLine.innerHTML = data;
-        });
-
-      fetch('/layouts/zalo.html')
-        .then(response => response.text())
-        .then(data => {
-          const zalo = document.getElementById('zalo');
-          if (zalo) zalo.innerHTML = data;
-        });
     })
 ]).then(() => {
   const script = document.createElement('script');
