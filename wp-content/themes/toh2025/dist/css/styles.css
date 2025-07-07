@@ -4175,6 +4175,13 @@ input:checked+.switch__wrapper .switch__toggle {
     color: var(--color-text-light);
 }
 
+.contact-popup .primary-chat{
+    background-color: #363636;
+    color: #fff;
+    margin: 0.5rem auto;
+    border-radius: 10px;
+}
+
 .contact-options {
     display: flex;
     flex-wrap: wrap;
