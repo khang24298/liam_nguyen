@@ -3976,8 +3976,8 @@ input:checked+.switch__wrapper .switch__toggle {
     font-size: 100px;
 }
 
-.slides>div:target {
-    /*   transform: scale(0.8); */
+.slides>div article {
+    padding:10px
 }
 
 .author-info {
