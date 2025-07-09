@@ -483,7 +483,50 @@
     </main>
     
     <footer id="footer"></footer>
-    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <!-- AI Agent Chat -->
+    <div class="floating-telegram-button">
+        <a href="https://t.me/inout_money_bot" target="_blank">
+            <span>Try AI</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.1l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.57c-.28 1.13-1.04 1.4-1.74.88l-4.92-3.6l-2.38 2.31c-.26.25-.49.49-.94.49z"/></svg>
+        </a>
+    </div>
+    <style>
+        .floating-telegram-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .floating-telegram-button a {
+            display: flex;
+            align-items: center;
+            background-color: var(--color-text);
+            color: var(--color-bg);
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .floating-telegram-button a:hover {
+            transform: scale(1.05);
+        }
+
+        .floating-telegram-button a span {
+            margin-right: 10px;
+        }
+
+        .floating-telegram-button a svg {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
     <script type="module">
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
@@ -523,7 +566,7 @@
             allowFileUploads: true,
         });
 
-    </script>
+    </script> -->
     <script type="text/javascript" src="/layouts/index.js"></script>
     <!-- Force this to run first to inject nav and footer -->
     <!-- <script async defer src="https://scripts.withcabin.com/hello.js"></script> -->
