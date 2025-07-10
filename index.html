@@ -100,6 +100,11 @@
             --chat--input--send--button--color: #777980;
             --chat--message--font-size: 0.8em;
             --chat--message--padding: 0.8em;
+
+            --chat--window--bottom: 0.8rem;
+            --chat--toggle--size: 44px;
+            --chat--toggle--width: var(--chat--toggle--size);
+            --chat--toggle--height: var(--chat--toggle--size);
         }
     </style>
 </head>
@@ -483,7 +488,7 @@
     </main>
     
     <footer id="footer"></footer>
-    <!-- AI Agent Chat -->
+    <!-- AI Agent Telegram -->
     <div class="floating-telegram-button">
         <a href="https://t.me/inout_money_bot" target="_blank">
             <span>Try AI</span>
@@ -493,8 +498,8 @@
     <style>
         .floating-telegram-button {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
+            bottom: 70px;
+            right: 15px;
             z-index: 1000;
         }
 
@@ -526,7 +531,7 @@
     </style>
 
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
     <script type="module">
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
@@ -566,7 +571,7 @@
             allowFileUploads: true,
         });
 
-    </script> -->
+    </script>
     <script type="text/javascript" src="/layouts/index.js"></script>
     <!-- Force this to run first to inject nav and footer -->
     <!-- <script async defer src="https://scripts.withcabin.com/hello.js"></script> -->
